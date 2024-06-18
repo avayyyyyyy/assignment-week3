@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+/* Provide some basic styles for react-beautiful-dnd */
+.droppable {
+  background: #f0f0f0;
+  padding: 8px;
+  width: 100%;
+  min-height: 400px;
+}
+
+.draggable {
+  user-select: none;
+  padding: 16px;
+  margin: 0 0 8px 0;
+  background: #fff;
+  border: 1px solid #ddd;
+}

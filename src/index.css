@@ -1,13 +1,39 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Provide some basic styles for react-beautiful-dnd */
+.droppable {
+  background: #f0f0f0;
+  padding: 8px;
+  width: 100%;
+  min-height: 400px;
+}
+
+.draggable {
+  user-select: none;
+  padding: 16px;
+  margin: 0 0 8px 0;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+/* Reset user-select to ensure dragging works */
+.draggable {
+  user-select: none;
+}
+
+/* Optional: Adjust cursor style during dragging */
+.draggable:hover {
+  cursor: grab;
 }
